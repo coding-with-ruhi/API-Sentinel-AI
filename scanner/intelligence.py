@@ -145,10 +145,10 @@ class APIIntelligenceEngine:
     # Endpoint Analysis
     # ---------------------------------------------------------
 
-    def _analyze_endpoint(
-        self,
-        endpoint: EndpointInfo,
-    ) -> EndpointProfile:
+    def analyze_endpoints(
+    self,
+    endpoints: List[EndpointInfo],
+) -> List[EndpointProfile]:
         """
         Perform deterministic analysis of
         a single endpoint.
