@@ -33,7 +33,7 @@ from dataclasses import dataclass
 from typing import List
 
 from scanner.discovery import (
-    DiscoveryEngine,
+    APIDiscoveryEngine,
     EndpointInfo,
 )
 
@@ -122,7 +122,7 @@ class APISentinelPipeline:
             "Initializing API Sentinel Pipeline..."
         )
 
-        self.discovery = DiscoveryEngine()
+        self.discovery = APIDiscoveryEngine()
 
         self.intelligence = APIIntelligenceEngine()
 
